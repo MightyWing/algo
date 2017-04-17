@@ -9,8 +9,8 @@ It is possible to download the Algo scripts to your own Ubuntu server and run th
 tl;dr:
 
 ```shell
-sudo apt-get install software-properties-common && sudo apt-add-repository ppa:ansible/ansible
-sudo apt-get update && sudo apt-get install ansible
+ apt-get install software-properties-common &&  apt-add-repository ppa:ansible/ansible
+ apt-get update &&  apt-get install ansible
 git clone https://github.com/trailofbits/algo
 cd algo && ./algo
 ```

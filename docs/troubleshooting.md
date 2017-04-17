@@ -24,7 +24,7 @@ On macOS, you tried to install the dependencies with pip and encountered the fol
 Downloading cffi-1.9.1.tar.gz (407kB): 407kB downloaded
   Running setup.py (path:/private/tmp/pip_build_root/cffi/setup.py) egg_info for package cffi
 
-You have not agreed to the Xcode license agreements, please run 'xcodebuild -license' (for user-level acceptance) or 'sudo xcodebuild -license' (for system-wide acceptance) from within a Terminal window to review and agree to the Xcode license agreements.
+You have not agreed to the Xcode license agreements, please run 'xcodebuild -license' (for user-level acceptance) or ' xcodebuild -license' (for system-wide acceptance) from within a Terminal window to review and agree to the Xcode license agreements.
 
     No working compiler found, or bogus compiler options
     passed to the compiler from Python's distutils module.
@@ -61,7 +61,7 @@ Command /usr/bin/python -c "import setuptools, tokenize;__file__='/private/tmp/p
 Storing debug log for failure in /Users/algore/Library/Logs/pip.log
 ```
 
-You are running an old version of `pip` that cannot build the `pycrypto` dependency. Upgrade to a new version of `pip` by running `sudo pip install -U pip`.
+You are running an old version of `pip` that cannot build the `pycrypto` dependency. Upgrade to a new version of `pip` by running ` pip install -U pip`.
 
 ### 3. Error: "TypeError: must be str, not bytes"
 
@@ -107,7 +107,7 @@ ping: local error: Message too long, mtu=1438
 ```
 Then, set the MTU size on your network adapter (wlan0 or eth0):
 ```
-$ sudo ifconfig wlan0 mtu 1438
+$  ifconfig wlan0 mtu 1438
 ```
 
 ### 8. The region you want is not available

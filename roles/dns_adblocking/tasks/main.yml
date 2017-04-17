@@ -36,7 +36,7 @@
 
 - name: Update adblock hosts
   shell: >
-    sudo -u dnsmasq "/usr/local/sbin/adblock.sh"
+     -u dnsmasq "/usr/local/sbin/adblock.sh"
 
 - name: Dnsmasq enabled and started
   service: name=dnsmasq state=started enabled=yes

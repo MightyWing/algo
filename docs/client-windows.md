@@ -22,7 +22,7 @@ The subsystem will be installed, then Windows will require a reboot. Reboot, the
 Install additional packages:
 
 ```shell
-sudo apt-get update && sudo apt-get install python-pip python-setuptools build-essential libssl-dev libffi-dev python-dev python-virtualenv git -y
+ apt-get update &&  apt-get install python-pip python-setuptools build-essential libssl-dev libffi-dev python-dev python-virtualenv git -y
 ```
 
 Clone the Algo repository:

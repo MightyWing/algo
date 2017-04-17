@@ -46,7 +46,7 @@ The easiest way to get an Algo server running is to let it set up a _new_ virtua
       ```
     - Linux (deb-based):
       ```bash
-      $ sudo apt-get update && sudo apt-get install \
+      $  apt-get update &&  apt-get install \
           build-essential \
           libssl-dev \
           libffi-dev \
@@ -138,15 +138,15 @@ Install strongSwan, then copy the included ipsec_user.conf, ipsec_user.secrets, 
 
 #### Ubuntu Server 16.04 example
 
-1. `sudo apt-get install strongswan strongswan-plugin-openssl`: install strongSwan
+1. ` apt-get install strongswan strongswan-plugin-openssl`: install strongSwan
 2. `/etc/ipsec.d/certs`: copy `user.crt` from `algo-master/configs/<name>/pki/certs`
 3. `/etc/ipsec.d/private`: copy `user.key` from `algo-master/configs/<name>/pki/private`
 4. `/etc/ipsec.d/cacerts`: copy `cacert.pem` from `algo-master/configs/<name>/cacert.pem`
 5. `/etc/ipsec.secrets`: add your `user.key` to the list, e.g. `xx.xxx.xx.xxx : ECDSA user.key`
 6. `/etc/ipsec.conf`: add the connection from `ipsec_user.conf` and update `leftcert` to match the `user.crt` filename
-7. `sudo ipsec restart`: pick up config changes
-8. `sudo ipsec up <conn-name>`: start the ipsec tunnel
-9. `sudo ipsec down <conn-name>`: shutdown the ipsec tunnel
+7. ` ipsec restart`: pick up config changes
+8. ` ipsec up <conn-name>`: start the ipsec tunnel
+9. ` ipsec down <conn-name>`: shutdown the ipsec tunnel
 
 One common use case is to let your server access your local LAN without going through the VPN. Set up a passthrough connection by adding the following to `/etc/ipsec.conf`. Replace `192.168.1.1/24` with the subnet your LAN uses:
 
